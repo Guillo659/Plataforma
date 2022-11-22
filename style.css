@@ -1,0 +1,17 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    margin-left: 2%;
+}
+#school_name {
+    float: left;
+    font-size: 2rem;
+    margin-top: 2%;
+}
+#line {
+    float: left;
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 3%;
+}
