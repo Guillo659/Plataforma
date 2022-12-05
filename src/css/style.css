@@ -1,19 +1,21 @@
 * {
    font-family: 'Segoe UI' ; 
    color: white;
+   margin: 0;
+   padding: 0;
 }   
 body {
     background-image: url(https://img.freepik.com/premium-photo/blurred-bookshelf-many-old-books-book-shop-library_36051-477.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin: 0;
+    min-width: 100%;
     min-height: 100vh;
-    min-width: 100vh;
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     display: flex;
 }
 /** Movil **/
@@ -47,6 +49,9 @@ body {
         position: absolute;
         margin-left: 10%;
         margin-right: 10%;
+    }
+    input {
+        color: #ffffff;
     }   
     .caja {
         position: relative;
@@ -54,18 +59,21 @@ body {
         background: none;
         border: none;
         outline: 0px;
-        border: 2px solid #c7c7c7;
-        border-radius: 5px;
+        border-bottom: 2px solid #c7c7c7;
         width: 65%;
         height: 40px;
         text-align: center;
         color: #ffffff;
         margin-bottom: 9%;
     }
+    .caja:hover {
+        border-bottom: 4px solid #ffffff; 
+    }
     #botoncito {
         background-color: white;
         color: darksalmon;
         font-size: 17px;
+        border-radius: 5px;
     }
     #div-icons {
         padding-left: 27%;
@@ -149,6 +157,10 @@ body {
 }
 /** Escritorio **/
 @media (min-width: 1100px) and (max-width: 1499px) {
+    body {
+        display: flex;
+        flex: 0 0 50% 50%;
+    }
     #login {
         float: right;
         margin-right: 0px;
@@ -188,12 +200,6 @@ body {
         font-size: 20px;
         margin-left: 5px;
     }
-    #images {
-        float: left;
-        margin-right: 40%;
-        margin-left: 30%;
-        margin-top: 80%;
-    }
     #logo_school {
         margin: 5%;
         margin-top: 15%;
@@ -201,46 +207,47 @@ body {
         border-radius: 50%;
         position: fixed;
     }
-    #div-icons {
-        margin-top: 70%;
-        margin-left: 20%;
-        margin-right: -50%;
-    }
+    #images {
+        position: fixed;
+        display: flex;
+        bottom: 10%;
+        justify-content: space-evenly;
+        padding: 0 14%;
+    }   
     .icons {
+        width: 10%;
         display: inline-block;
-        width: 20%;
-        color: #ffffff;
+    }
+    #div-help {
+        display: flex;
+        bottom: 2%;
+        right: 1%;
+        position: fixed;
     }
     #help {
-        position: relative;
-        display: flex;
-        width: 8%;
-        height: 8%;
-        float: right;
-        margin-right: -85%;
-        margin-top: 105%;
+        width: 55%;
     }    
 }
 /** TVs **/
 @media (min-width: 1500px) {
     #login {
         float: right;
-        margin-right: 0px;
-        margin-left: 53%;
+        margin-right: 20%;
+        margin-left: 63%;
         margin-top: 15%;
         position: fixed;
     }
     .text {
-        font-size: 3rem;
+        font-size: 6rem;
         text-align: center;
         margin-bottom: 0;
     }
     #school_name {
-        margin-top: 0;
-        font-size: 1rem;
+        margin-top: 6%;
+        font-size: 3rem;
     }
     form {
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .caja {
         position: relative;
@@ -248,11 +255,11 @@ body {
         background: none;
         border: none;
         outline: 0px;
-        border: 2px solid #c7c7c7;
-        border-radius: 5px;
-        width: 450px;
+        border: 6px solid #c7c7c7;
+        border-radius: 15px;
+        width: 650px;
         text-align: center;
-        height: 40px;
+        height: 100px;
         color: #ffffff;
         margin-bottom: 9%;
     }
@@ -263,36 +270,30 @@ body {
         margin-left: 5px;
     }
     #images {
-        float: left;
-        margin-right: 40%;
-        margin-left: 15%;
-        margin-top: 65%;
+        position: fixed;
+        display: flex;
+        bottom: 10%;
+        justify-content: space-evenly;
+        padding: 0 14%;
     }
     #logo_school {
         margin: 5%;
-        margin-top: 15%;
+        top: 8%;
         width: 35%;
         border-radius: 50%;
         position: fixed;
     }
-    #div-icons {
-        margin-top: 70%;
-        margin-right: 10%;
-        margin-left: 20%;
-        margin-right: -42%;
-    }
     .icons {
+        width: 30%;
         display: inline-block;
-        width: 20%;
-        color: #ffffff;
+    }
+    #div-help {
+        display: flex;
+        bottom: 2%;
+        right: 1%;
+        position: fixed;
     }
     #help {
-        position: relative;
-        display: flex;
-        width: 8%;
-        height: 8%;
-        float: right;
-        margin-right: -85%;
-        margin-top: 105%;
+        width: 55%;
     }
 }
