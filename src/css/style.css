@@ -73,7 +73,11 @@ body {
         margin-bottom: 9%;
     }
     .caja:hover {
-        border-bottom: 4px solid #ffffff; 
+        transition: 0.2s;
+        border-bottom: 3px solid #ffffff; 
+    }
+    label {
+        display: none;
     }
     #botoncito {
         background-color: white;
@@ -97,11 +101,6 @@ body {
 }
 /** Tablets **/
 @media (min-width: 600px) and (max-width: 1099px) {           
-    html, body {
-        min-width: 100%;
-        min-height: 100vh; 
-        display: flex;
-    }
     .text {
         margin: 5%;
         font-size: 2rem;
@@ -135,14 +134,17 @@ body {
         background: none;
         border: none;
         outline: 0px;
-        border: 5px solid #c7c7c7;
-        border-radius: 5px;
+        border-bottom: 5px solid #c7c7c7;
         width: 60%;
         text-align: center;
         height: 70px;
         color: #ffffff;
         margin-bottom: 9%;
         font-size: 2rem;
+    }
+    .caja:hover {
+        transition: 0.2s;
+        border-bottom: 7px solid #c7c7c7;
     }
     #botoncito {
         background-color: white;
